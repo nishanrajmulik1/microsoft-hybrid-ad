@@ -103,6 +103,11 @@ This confirmed the successful operation of the hybrid identity setup.
 
 ---
 
+## Video Demonstration
+▶️ [Watch the Hybrid Active Directory Demo](https://youtu.be/HyVbGK06D1o)
+
+---
+
 ## Security Considerations
 - Secure communication between on-premises and cloud directories
 - Least-privilege principles followed during configuration
