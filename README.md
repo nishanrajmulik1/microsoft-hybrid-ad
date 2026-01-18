@@ -3,7 +3,7 @@
 ## Overview
 This project demonstrates the implementation of a **Hybrid Identity environment** by integrating an **on-premises Active Directory** with **Microsoft Entra ID (Azure Active Directory)** using **Microsoft Entra Connect (Azure AD Connect)**.
 
-The objective was to enable synchronization of on-premises Active Directory users to Microsoft Entra ID, allowing centralized identity management across both on-premises and cloud environments. This setup reflects a **real-world enterprise hybrid identity architecture** widely used during cloud migrations.
+The objective was to enable synchronisation of on-premises Active Directory users to Microsoft Entra ID, allowing centralised identity management across both on-premises and cloud environments. This setup reflects a **real-world enterprise hybrid identity architecture** widely used during cloud migrations.
 
 ---
 
@@ -40,7 +40,7 @@ An on-premises Active Directory environment was configured with:
 - DNS services
 - User accounts created within the domain
 
-These users represented enterprise identities intended for cloud synchronization.
+These users represented enterprise identities intended for cloud synchronisation.
 
 ---
 
@@ -54,13 +54,13 @@ Microsoft Entra Connect (Azure AD Connect) was installed on the on-premises serv
 - On-premises Active Directory
 - Microsoft Entra ID
 
-This tool enables directory synchronization and hybrid identity functionality.
+This tool enables directory synchronisation and hybrid identity functionality.
 
 ---
 
-### Step 4: Establishing Directory Synchronization
+### Step 4: Establishing Directory Synchronisation
 During configuration:
-- A new synchronization service was created
+- A new synchronisation service was created
 - Secure communication between on-prem AD and Entra ID was established
 - The directories were successfully connected
 
@@ -68,38 +68,45 @@ This enabled replication of identities from the on-premises environment to the c
 
 ---
 
-### Step 5: Configuring Synchronization Rules
-Synchronization rules were configured to:
+### Step 5: Configuring Synchronisation Rules
+Synchronisation rules were configured to:
 - Ensure correct replication of on-premises users
 - Map Active Directory user attributes to Microsoft Entra ID attributes
 - Maintain consistency of identity data across environments
 
-Proper attribute mapping ensured accurate identity synchronization.
+Proper attribute mapping ensured accurate identity synchronisation.
 
 ---
 
 ### Step 6: Monitoring and Validation
-The synchronization process was monitored by:
-- Reviewing synchronization logs in Microsoft Entra ID
+The synchronisation process was monitored by:
+- Reviewing synchronisation logs in Microsoft Entra ID
 - Verifying replicated users in the Azure Portal
-- Troubleshooting any synchronization issues
+- Troubleshooting any synchronisation issues
 
 This confirmed the successful operation of the hybrid identity setup.
 
 ---
 
 ## Results
-- On-premises Active Directory users were successfully synchronized to Microsoft Entra ID
+- On-premises Active Directory users were successfully synchronised to Microsoft Entra ID
 - Hybrid identity functionality was validated
 - User accounts were visible and manageable in the Azure Portal
-- Synchronization operated without critical errors
+- Synchronisation operated without critical errors
+
+---
+
+## Screenshots
+
+### Microsoft Entra ID - Hybrid Active Directory Dashboard
+![Microsoft Hybrid AD - Azure Portal](screenshots/hybrid-ad-azure-dashboard.png)
 
 ---
 
 ## Security Considerations
 - Secure communication between on-premises and cloud directories
 - Least-privilege principles followed during configuration
-- Synchronization logs monitored for health and errors
+- Synchronisation logs monitored for health and errors
 - Microsoft-recommended hybrid identity practices applied
 
 ---
@@ -107,14 +114,14 @@ This confirmed the successful operation of the hybrid identity setup.
 ## Key Learnings
 - Understanding hybrid identity architecture
 - Hands-on experience with Microsoft Entra Connect
-- Directory synchronization and attribute mapping
+- Directory synchronisation and attribute mapping
 - Monitoring and troubleshooting identity sync issues
 - Real-world enterprise identity integration
 
 ---
 
 ## Future Enhancements
-- Implement Password Hash Synchronization (PHS) or Pass-Through Authentication (PTA)
+- Implement Password Hash Synchronisation (PHS) or Pass-Through Authentication (PTA)
 - Enable Hybrid Azure AD Join for devices
 - Integrate Microsoft Defender for Identity
 - Apply Conditional Access policies for enhanced security
